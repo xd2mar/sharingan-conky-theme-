@@ -2,4 +2,4 @@
 
 #sharingan conky theme 
 
-![This is an image](https://im.ge/i/FVyBN1)
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
