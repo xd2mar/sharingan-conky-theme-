@@ -1,0 +1,82 @@
+#SHARINGAN THEME
+#https://github.com/xd2mar
+#https://twitter.com/qk9
+#
+update_interval 1
+total_run_times 0
+net_avg_samples 1
+cpu_avg_samples 1
+imlib_cache_size 0
+double_buffer yes
+no_buffers yes
+use_xft yes
+xftfont Droid Sans:size=9
+override_utf8_locale yes
+text_buffer_size 2048
+own_window yes
+own_window_type desktop
+own_window_transparent yes
+own_window_hints undecorated,sticky,skip_taskbar,skip_pager
+alignment top_right
+gap_x 0
+gap_y 35
+minimum_size 285 0
+default_bar_size 30 0
+draw_shades no
+color3 ff8400
+own_window_argb_visual yes
+own_window_colour 000000
+own_window_argb_value 0
+
+TEXT
+${goto 195}${color gold}${font Zekton:style=bold:size=13}${voffset 40}${exec whoami}
+${voffset -45}${font Zekton:style=Bold:size=12}${color3}${goto 70}${uptime}
+${goto 90}${font Zekton:style=Bold:size=12}${color dark green}${sysname}${color}${font}
+${font Chinacat:size=12}${offset 70}${voffset 45}${color gold}${time %B %d, %Y} ${goto 248}${font Zekton:style=bold:size=11} 
+${goto 248}${font Zekton:style=bold:size=11}
+${voffset -11}${goto 65}${color 71e551}${font Zekton:style=bold:size=30}${time %H:%M}${font}${goto 220}${font Zekton:style=Bold:size=11}${color orange}°C 
+${goto 220}${font Zekton:style=bold:size=11}${color 71e551}${acpitemp} 
+${voffset 30}${goto 82}${color d3e551}HOME 
+${goto 82}${font Zekton:style=Bold:size=10}${color 09d582}${fs_used /home}
+${voffset 35}${goto 37}${font Zekton:style=Bold:size=13}${color d38109}SDA${goto 123}${color d33d09}SDB${color d38109}${goto 205}RAM
+${goto 30}${font Zekton:style=Bold:size=9}${color d33d09}${diskio /dev/sda}${goto 120}${color d38109}${diskio /dev/sda1} ${goto 215}${font Zekton:style=Bold:size=11}${color d33d09}${memperc}${color d33d09}%
+${voffset 16}${font Zekton:style=Bold:size=11}${goto 83}${color 83abcf}ROOT${color 34a966}${goto 160}SWAP
+${font Zekton:style=Bold:size=9}${color 34a966}${goto 83}${fs_used /}${goto 173}${color 83abcf}${swapperc}%
+
+${goto 125}${font Zekton:style=Bold}${color green}CPU 
+${color3}${cpugraph 25,250 05fae1 0c2d04}${voffset -1}
+${goto 1}${font Zekton:style=Bold:size=11}${color grey}${cpu cpu0} ${color dark green}%${goto 45}${font Zekton:style=Bold:size=11}${color grey}${cpu cpu1} ${color dark green}%${goto 90}${font Zekton:style=Bold:size=11}${color grey}${cpu cpu2} ${color dark green}%${goto 135}${font Zekton:style=Bold:size=11}${color grey}${cpu cpu3} ${color dark green}% ${goto 180}${font Zekton:style=Bold:size=11}${color grey}${cpu cpu4} ${color dark green}%${goto 225}${font Zekton:style=Bold:size=11}${color grey}${cpu cpu5} ${color dark green}% 
+${goto 1}${font Zekton:style=Bold:size=11}${color grey}${cpu cpu6} ${color dark green}%${goto 45}${font Zekton:style=Bold:size=11}${color grey}${cpu cpu7} ${color dark green}%${goto 90}${font Zekton:style=Bold:size=11}${color grey}${cpu cpu8} ${color dark green}%${goto 135}${font Zekton:style=Bold:size=11}${color grey}${cpu cpu9} ${color dark green}% ${goto 180}${font Zekton:style=Bold:size=11}${color grey}${cpu cpu10} ${color dark green}%${goto 225}${font Zekton:style=Bold:size=11}${color grey}${cpu cpu11} ${color dark green}% 
+${goto 1}${font Zekton:style=Bold:size=11}${color grey}${cpu cpu12} ${color dark green}%${goto 45}${font Zekton:style=Bold:size=11}${color grey}${cpu cpu13} ${color dark green}%${goto 90}${font Zekton:style=Bold:size=11}${color grey}${cpu cpu14} ${color dark green}%${goto 135}${font Zekton:style=Bold:size=11}${color grey}${cpu cpu15} ${color dark green}% #${goto 180}${font Zekton:style=Bold:size=11}${color grey}${cpu cpu16} ${color dark green}%${goto 225}${font Zekton:style=Bold:size=11}${color grey}${cpu cpu17} ${color dark green}% 
+
+
+${offset 3}${font Zekton:size=10,weight:normal}${color red}${top name 1}${alignr}${top cpu 1}%
+${offset 3}${font Zekton:size=10,weight:normal}${color green}${top name 2}${alignr}${top cpu 2}%
+${offset 3}${font Zekton:size=10,weight:normal}${color gold}${top name 3}${alignr}${top cpu 3}%
+${offset 3}${font Zekton:size=10,weight:normal}${color red}${top name 4}${alignr}${top cpu 4}%
+${offset 3}${font Zekton:size=10,weight:normal}${color green}${top name 5}${alignr}${top cpu 5}%
+
+${goto 125}${font Zekton:style=Bold}${color green}MEM
+${offset 3}${font Zekton:size=10,weight:normal}${color red} ${top_mem name 1}${alignr}${top_mem mem 1}%
+${offset 3}${font Zekton:size=10,weight:normal}${color green} ${top_mem name 2}${alignr}${top_mem mem 2}%
+${offset 3}${font Zekton:size=10,weight:normal}${color gold} ${top_mem name 3}${alignr}${top_mem mem 3}%
+${offset 3}${font Zekton:size=10,weight:normal}${color red} ${top_mem name 4}${alignr}${top_mem mem 4}%
+${offset 3}${font Zekton:size=10,weight:normal}${color green} ${top_mem name 4}${alignr}${top_mem mem 5}%
+
+${goto 125}${font Zekton:style=Bold}${color green}SWAP
+${offset 3}${font Ubuntu:size=12,weight:normal}${alignr}$swap|${color red}$swapmax       $swapperc%
+
+${goto 125}${font Zekton:style=Bold}${color green}DISK${font Zekton:size=10,weight:normal}
+${color red}${font Zekton:size=14}Write:${color gold} $alignr ${color green}$diskio_write
+${color3}${diskiograph_write 20}
+ ${color red}Read: ${color gold}$alignr ${color green}$diskio_read
+${color3}${diskiograph_read 20}
+
+${image ~/.conky/xd2mar/xd.png -p -265,-3}
+
+
+
+
+
+
+
